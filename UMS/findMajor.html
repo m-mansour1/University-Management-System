@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Find Your Major</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <style>
+        * {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            text-transform: capitalize;
+            transition: all .2s linear;
+        }
+
+        body {
+            background-color: #1d1b31;
+            overflow: scroll;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .container .heading {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .container .box-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .container .box-container .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+            display: none;
+        }
+
+        .container .box-container .box:nth-child(1),
+        .container .box-container .box:nth-child(2),
+        .container .box-container .box:nth-child(3) {
+            display: inline-block;
+        }
+
+        .container .box-container .box .image {
+            margin-bottom: 20px;
+            overflow: hidden;
+            height: 250px;
+            border-radius: 5px;
+        }
+
+        .container .box-container .box .image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container .box-container .box:hover .image img {
+            transform: scale(1.1);
+        }
+
+        .container .box-container .box .content h3 {
+            font-size: 20px;
+            color: #334;
+        }
+
+        .container .box-container .box .content p {
+            font-size: 20px;
+            color: #777;
+            line-height: 2;
+            padding: 15px 0;
+        }
+
+        .container .box-container .box .content .btn {
+            display: inline-block;
+            padding: 10px 30px;
+            border: 1px solid #334;
+            color: #334;
+            font-size: 16px;
+        }
+
+        .container .box-container .box .content .btn:hover {
+            background-color:  #2980b9;;
+            border-color: #2980b9;
+            color: #fff;
+        }
+
+        .container .box-container .box .content .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #334;
+        }
+
+        .container .box-container .box .content .icons span {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .container .box-container .box .content .icons span i {
+            padding-right: 5px;
+            color: crimson;
+        }
+
+        #load-more {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 13px 30px;
+            border: 1px solid #334;
+            color: #334;
+            font-size: 16px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        #load-more:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+            color: #fff;
+        }
+
+        @media (max-width:450px) {
+            .container .heading {
+                font-size: 25px;
+            }
+
+            .container .box-container {
+                grid-template-columns: 1fr;
+            }
+
+            .container .box-container .box image {
+                height: 200px;
+            }
+
+            .container .box-container .box .content p {
+                font-size: 12px;
+            }
+
+            .container .box-container .box .content .icons span {
+                font-size: 12px;
+            }
+        }
+    </style>
+    <div class="container">
+        <h1 class="heading">Find Your Major</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/BsinCs.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>BS in Computer Science</h3>
+                    <p>This major gives you a fundamental understanding of the theoretical principles of software and
+                        digital systems within the context of current technology. It is designed for career-oriented
+                        students as well as for students who wish to pursue graduate studies.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/bioinfo.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>BS in Bioinformatics</h3>
+                    <p>Bioinformatics is a multidisciplinary program that combines biology with statistics and
+                        information technology to explore and understand biological data. Major research areas in the
+                        field include: alignment of gene and protein sequences, design and discovery of new drugs,
+                        prediction of protein structures, regulation of gene expressions and pathways, interaction of
+                        proteins, as well as association of genes with different diseases.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/maths.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>BS in Mathematics</h3>
+                    <p>This major is designed to offer you quality education in mathematics in addition to a solid
+                        foundation in the liberal arts by providing you with a strong background in the skills of logic,
+                        reasoning, critical thinking, and technology.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st may, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/actuarial.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Executive MA in Actuarial Science</h3>
+                    <p>Actuaries are risk management experts who use mathematics, financial theory, probability, and
+                        statistics to predict the likelihood of events and create innovative solutions to minimize risk
+                        and its impact. They are creative thinkers, problem solvers, analysts and experienced business
+                        professionals with a wide understanding of financial structures.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st may, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/appliedcomp.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MS in Applied and Computational Mathematics</h3>
+                    <p>This research-oriented program presents you with a unique opportunity to conduct high quality
+                        research on problems of significant impact in applied sciences.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/msincs.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MS in Computer Science</h3>
+                    <p>Graduate work in computer science involves the study of the development of physical and
+                        theoretical design and understanding of computer systems, as well as the implementation of those
+                        developments into everyday life.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/online.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>MS in Computer Science(Online)</h3>
+                    <p>this program gives you the relevant experience you need to meet the global demand for computer
+                        science experts and apply what you learn across industries. Customize your studies by choosing
+                        from two focus area options and solve real-world problems while building skill sets employers
+                        want.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/ms.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Minor in Computer Science</h3>
+                    <p>This program will provide you with computing skills to be better prepared for the job market. You will
+                        also gain basic knowledge of the computing field, related principles, and tools..</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/mathsmin.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Minor in Mathematics</h3>
+                    <p>This program will provide you with a strong background in the skills of logic, reasoning, and critical
+                        thinking.</p>
+                    <a href="#" class="btn">read more</a>
+                    <div class="icons">
+                        <span><i class="fas fa-calendar"></i> 21st June, 2022</span>
+                        <span><i class="fas fa-user"></i>by admin</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="load-more">load more</div>
+    </div>
+    <script>
+
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 3;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.container .box-container .box')];
+            for (var i = currentItem; i < currentItem + 3; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 3;
+
+            if (currentItem >= boxes.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+
+</html>

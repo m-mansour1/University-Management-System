@@ -1,0 +1,127 @@
+body{
+    background-color: #1d1b31;
+    font-family: sans-serif;
+    overflow: scroll;
+}
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.table thead{
+    background-color: #87CEEB;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #f1f1f1;
+    background-color: #1d1b31;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+
+.table .text_open{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.35px;
+    color: #87CEEB;
+}
+
+.table tbody tr td .btn{
+    width: 130px;
+    font-weight: medium;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #87CEEB;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.addNew{
+    width: 130px;
+    font-weight: medium;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 35px;
+    display: inline-block;
+    background-color: #87CEEB;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    font-size: 14px;
+    opacity: 1;
+}
+
+#parent {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  #child {
+    display: inline-block;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+
+@media(max-width:768px){
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+}

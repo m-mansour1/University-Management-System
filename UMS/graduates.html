@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Graduates</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+<style>
+    header {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/grads2.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    body {
+        overflow: scroll;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    ul {
+        float: right;
+        list-style-type: none;
+        margin-top: 25px;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    ul li {
+        display: inline-block;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.6s ease;
+
+    }
+
+    ul li a:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    ul li.active a {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .logo img {
+        float: left;
+        width: 150px;
+        height: auto;
+    }
+
+    .main {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .title {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .title h1 {
+        color: #fff;
+        font-size: 60px;
+        font-style: italic;
+    }
+
+    .title h4 {
+        color: #fff;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .button {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btn {
+        border: 1px solid #fff;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        transition: 0.6s ease;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background-color: #fff;
+        color: #000;
+
+    }
+
+
+
+
+    .aboutuss {
+        background: url('images/grads.jpg') no-repeat left;
+        background-size: 70%;
+        background-color: #66a1d4;
+        overflow: hidden;
+        padding: 100px 0;
+    }
+
+    .readbutton {
+
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .inner-container {
+        width: 55%;
+        float: right;
+        opacity: 0.7;
+        background-color: #668fd4;
+        padding: 150px;
+    }
+
+    .inner-container h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+    .text {
+        font-size: 15px;
+        color: #545454;
+        font-weight: bolder;
+        line-height: 30px;
+        text-align: justify;
+        margin-bottom: 40px;
+    }
+
+    .wrapper {
+        font-family: 'raleway';
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background-color: #66a1d4;
+        padding: 4em;
+        padding-bottom: 0;
+    }
+
+    .contact-box {
+        background-color: #66a1d4;
+
+        padding: 40px 0;
+    }
+
+    .contact-box h1 {
+        text-align: center;
+        color: #ddd;
+    }
+
+    .border {
+        width: 100px;
+        height: 10px;
+        background-color: #66a1d4;
+
+        margin: 40px auto;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: auto;
+        padding: 0 10px;
+        overflow: hidden;
+    }
+
+    .contactxt {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 16px 0;
+        border: 0;
+        background: #111;
+        padding: 20px 40px;
+        outline: none;
+        color: #ddd;
+        transition: 0.5s;
+    }
+
+    .contactxt:focus {
+        box-shadow: 0 0 10px 4px #34495e;
+    }
+
+
+
+    .contactbutton {
+        float: right;
+        border: 0;
+        background: #34495e;
+        color: #fff;
+        padding: 12px 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    .contactbutton:hover {
+        background: #2980b9;
+    }
+
+    textarea.contactxt {
+        resize: none;
+        height: 120px;
+    }
+
+    .footer-container {
+        background-color: #212329;
+        padding: 4rem 0 2rem 0;
+    }
+
+    .footer {
+        width: 80%;
+        height: 40vh;
+        background-color: #212329;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .footer-heading {
+        display: flex;
+        flex-direction: column;
+        margin-right: 4rem;
+    }
+
+    .footer-heading h2 {
+        margin-bottom: 2rem;
+    }
+
+    .footer-heading * {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-heading *:hover {
+        color: red;
+        transition: 0.3s ease-out;
+
+    }
+
+    .joinemail h2 {
+        margin-bottom: 2rem;
+    }
+
+    #footeremail {
+        width: 250px;
+        height: 40px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        padding-left: 0.5rem;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    #footeremail::placeholder {
+        color: #f1f1f1;
+    }
+
+    .image1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    #emailbtn {
+        width: 100px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #F94230;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    #emailbtn:hover {
+        cursor: pointer;
+        background-color: #337AF1;
+        transition: all 0.4s ease-out;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="main">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+
+
+
+            <ul>
+                <li><a href="#contactus">Contact Us</a></li>
+
+                <li><a href="index.html">Home</a></li>
+
+            </ul>
+
+        </div>
+        <div class="title">
+            <h4>More than 200 graduates every year</h4>
+        </div>
+        <div class="button">
+            <a href="https://youtu.be/513zkqR53A4" class="btn">Watch Video</a>
+        </div>
+    </header>
+    <section>
+        <div class="aboutuss" id="aboutus">
+            <div class="inner-container">
+                <h1>About Us</h1>
+
+                <div class="text">
+                    <br>
+                    <h3>
+                        <p>Computer Science Departement is the leading provider of digital and blended distance
+                            education
+                            internationally, offering programmes to 5,000 students in more than 20 countries around the
+                            world.
+                            Although proudly rooted in London, our community and impact are global.
+                    </h3>
+                    We are a national leader in the technologies, and we promote their value to society and the
+                    economy through knowledge creation and exchange.</p>
+                    <div class="readbtn">
+                        <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="contactus" class="contact-box">
+        <h1>Have Any Question? </h1>
+        <h1>Contact Us! </h1>
+        <form class="contact-form">
+            <input type="text" class="contactxt" placeholder="Enter Your Name">
+            <input type="email" class="contactxt" placeholder="Enter Your Email">
+            <input type="text" class="contactxt" placeholder="Enter Your Phone Number">
+            <textarea class="contactxt" placeholder="Your Message here..."></textarea>
+            <input type="submit" class="contactbutton" value="Send Message">
+
+        </form>
+
+    </div>
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h2>About Us</h2>
+                <a href="#">Instructors</a>
+                <a href="#">Graduates</a>
+                <a href="#">Terms of Services</a>
+            </div>
+            <div class="footer-heading footer2">
+                <h2>Contact Info</h2>
+                <a href="#">Email: info@csdepartment.com.lb</a>
+                <a href="#">Phone. 01-372888</a>
+                <a href="#">Fax. 01-364464</a>
+            </div>
+
+            <div class="footer-heading footer3">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+                <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+            </div>
+            <div class="joinemail">
+                <h2>Join Our Newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footeremail">
+                <input type="submit" value="Sign Up" id="emailbtn">
+
+            </div>
+
+
+        </div>
+</body>
+
+</html>
