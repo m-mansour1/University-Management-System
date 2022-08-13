@@ -1,2 +1,15 @@
 # University-Management-System
- UMS that allows admins to manage the data, instructors to upload assignments, grades and take attendance, and students to receive and submit assignments and recieve their grades
+ UMS built using HTML5, CSS3, Bootstrap, PHP, MySQLi, that allows:
+ 
+ Admins:
+ - to manage the data
+ 
+ instructors:
+ - to upload assignments
+ - upload grades
+ - Take attendance
+ 
+ students:
+ - to receive assignments
+ - submit assignments
+ - recieve their grades
