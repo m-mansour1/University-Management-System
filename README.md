@@ -1,5 +1,5 @@
 # University-Management-System
- UMS built using HTML5, CSS3, Bootstrap, PHP, MySQLi, that allows:
+ UMS built using HTML5, CSS3, Bootstrap, PHP, MySQLi and jQuery that allows:
  
  Admins:
  - to manage the data
