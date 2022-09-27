@@ -2,7 +2,7 @@
  UMS built using HTML5, CSS3, Bootstrap, PHP, MySQLi and jQuery that allows:
  
  Admins:
- - to manage the data
+ - to manage the data, Create, update, delete data of Instructors and students
  
  instructors:
  - to upload/check submitted assignments
