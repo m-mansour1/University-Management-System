@@ -6,6 +6,8 @@
  
  instructors:
  - to upload/check submitted assignments
+ - view assigned courses
+ - view students in each assigned class
  - upload grades
  - Take attendance
  
