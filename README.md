@@ -5,11 +5,12 @@
  - to manage the data
  
  instructors:
- - to upload assignments
+ - to upload/check submitted assignments
  - upload grades
  - Take attendance
  
  students:
- - to receive assignments
- - submit assignments
+ - check for course offerings
+ - register and drop courses
+ - receive and submit assignments
  - recieve their grades
