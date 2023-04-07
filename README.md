@@ -15,4 +15,4 @@
  - check for course offerings
  - register and drop courses
  - receive and submit assignments
- - recieve their grades
+ - receive their grades
